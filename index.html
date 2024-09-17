@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Inspeção</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group select, .form-group textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .form-group button {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            background-color: #28a745;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .form-group button:hover {
+            background-color: #218838;
+        }
+        .form-group input[type="file"] {
+            padding: 0;
+        }
+        body {
+            background-color: #ffa500; /* Cor de fundo laranja */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Formulário de Inspeção</h1>
+        <form id="inspectionForm" action="YOUR_SCRIPT_URL_HERE" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="canal">CANAL:</label>
+                <select id="canal" name="canal">
+                    <option value="Canal1">Canal 1</option>
+                    <option value="Canal2">Canal 2</option>
+                    <option value="Canal3">Canal 3</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="setor">SETOR:</label>
+                <select id="setor" name="setor">
+                    <option value="Setor1">Setor 1</option>
+                    <option value="Setor2">Setor 2</option>
+                    <option value="Setor3">Setor 3</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="inspetores">INSPETORES:</label>
+                <select id="inspetores" name="inspetores">
+                    <option value="Inspetor1">Inspetor 1</option>
+                    <option value="Inspetor2">Inspetor 2</option>
+                    <option value="Inspetor3">Inspetor 3</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="local">LOCAL:</label>
+                <select id="local" name="local">
+                    <option value="Local1">Local 1</option>
+                    <option value="Local2">Local 2</option>
+                    <option value="Local3">Local 3</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="irregularidade">IRREGULARIDADE:</label>
+                <textarea id="irregularidade" name="irregularidade"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="oqueFazer">O QUE FAZER:</label>
+                <textarea id="oqueFazer" name="oqueFazer"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="responsavel">RESPONSÁVEL:</label>
+                <input type="text" id="responsavel" name="responsavel">
+            </div>
+            <div class="form-group">
+                <label for="dataInicio">DATA DE INÍCIO:</label>
+                <input type="date" id="dataInicio" name="dataInicio">
+            </div>
+            <div class="form-group">
+                <label for="realizado">REALIZADO:</label>
+                <input type="date" id="realizado" name="realizado">
+            </div>
+            <div class="form-group">
+                <label for="prazo">PRAZO:</label>
+                <input type="date" id="prazo" name="prazo">
+            </div>
+            <div class="form-group">
+                <label for="status">STATUS:</label>
+                <input type="text" id="status" name="status" readonly>
+            </div>
+            <div class="form-group">
+                <label for="observacao">OBSERVAÇÃO:</label>
+                <textarea id="observacao" name="observacao"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="beforeImage">ANTES:</label>
+                <input type="file" id="beforeImage" name="beforeImage">
+            </div>
+            <div class="form-group">
+                <label for="afterImage">DEPOIS:</label>
+                <input type="file" id="afterImage" name="afterImage">
+            </div>
+            <div class="form-group">
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
